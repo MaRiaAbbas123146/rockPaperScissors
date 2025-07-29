@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(250, 186, 233);
+}
+
+h1 {
+  background-color: rgb(105, 34, 78);
+  color: white;
+  height: 5rem;
+  line-height: 5rem;
+}
+
+.choice {
+  height: 150px;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.choices {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  margin-top: 5rem;
+
+}
+
+.choices :hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+#rock {
+  font-size: 2rem;
+  background-color: rgb(135, 21, 92);
+  border: 2px solid black;
+  color: white;
+
+}
+
+#paper {
+  background-color: rgb(139, 61, 121);
+  border: 2px solid black;
+  color: white;
+  font-size: 2rem;
+}
+
+#scissors {
+  font-size: 2rem;
+  color: white;
+  background-color: rgb(192, 10, 149);
+  border: 2px solid black;
+}
+
+.scoreboard {
+
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 3rem;
+  gap: 5rem;
+}
+
+#userscore,
+#compscore {
+  font-size: 4rem;
+}
+
+.msg-container {
+  margin-top: 5rem;
+}
+
+#msg {
+  display: inline;
+  padding: 1rem;
+  background-color: rgb(121, 4, 103);
+  color: rgb(250, 246, 246);
+  border-radius: 1rem;
+  font-size: 2rem;
+
+}
