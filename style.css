@@ -1,19 +1,22 @@
 * {
   margin: 0;
   padding: 0;
-  align-items: center;
-  text-align: center;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: rgb(250, 186, 233);
+  text-align: center;
+  background: linear-gradient(135deg, rgb(250, 186, 233), rgb(230, 120, 200));
 }
 
+/* Title */
 h1 {
   background-color: rgb(105, 34, 78);
   color: white;
   height: 5rem;
   line-height: 5rem;
+  letter-spacing: 2px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
+/* Choice buttons */
 .choice {
   height: 150px;
   width: 150px;
@@ -21,6 +24,10 @@ h1 {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
+  font-size: 1.5rem;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .choices {
@@ -29,61 +36,65 @@ h1 {
   align-items: center;
   gap: 3rem;
   margin-top: 5rem;
-
 }
 
-.choices :hover {
-  opacity: 0.5;
+.choice:hover {
+  transform: scale(1.1);
+  opacity: 0.9;
   cursor: pointer;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
 }
 
+/* Individual button colors */
 #rock {
-  font-size: 2rem;
   background-color: rgb(135, 21, 92);
-  border: 2px solid black;
+  border: 3px solid black;
   color: white;
-
 }
 
 #paper {
   background-color: rgb(139, 61, 121);
-  border: 2px solid black;
+  border: 3px solid black;
   color: white;
-  font-size: 2rem;
 }
 
 #scissors {
-  font-size: 2rem;
-  color: white;
   background-color: rgb(192, 10, 149);
-  border: 2px solid black;
+  border: 3px solid black;
+  color: white;
 }
 
+/* Scoreboard */
 .scoreboard {
-
   display: flex;
   justify-content: center;
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.8rem;
   margin-top: 3rem;
   gap: 5rem;
 }
 
 #userscore,
 #compscore {
-  font-size: 4rem;
+  font-size: 3.5rem;
+  color: rgb(105, 34, 78);
+  font-weight: bold;
+  text-shadow: 1px 1px 2px white;
 }
 
+/* Message box */
 .msg-container {
   margin-top: 5rem;
 }
 
 #msg {
-  display: inline;
-  padding: 1rem;
+  display: inline-block;
+  padding: 1rem 2rem;
   background-color: rgb(121, 4, 103);
   color: rgb(250, 246, 246);
   border-radius: 1rem;
-  font-size: 2rem;
-
+  font-size: 1.8rem;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: background 0.3s ease;
 }
